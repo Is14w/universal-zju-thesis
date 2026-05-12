@@ -14,7 +14,7 @@
 
 **请务必注意**：封面、原创性声明（签名 + 日期）、授权书（作者签名 + 导师签名 + 日期）等内容模板无法自动生成，请自行用 Word 编辑后导出为 PDF，再使用 `tools/merge.py` 拼接到正文中。
 
-我本人并不是ZJU的学生，因此也不会过分维护这个项目。欢迎Fork和PR来完善，或者如果你有更好的解决方案，也欢迎分享。
+我本人并不是 ZJU 的学生，因此也不会过分维护这个项目。欢迎 Fork 和 PR 来完善，或者如果你有更好的解决方案，也欢迎分享。
 
 ## 关于本项目
 
@@ -37,16 +37,9 @@
 ```bash
 git clone https://github.com/Is14w/universal-zju-thesis.git
 cd universal-zju-thesis
-typst compile thesis.typ --root ./
 ```
 
-### 实时预览
-
-推荐使用 VS Code + [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) 插件：
-
-```bash
-typst watch thesis.typ --root ./
-```
+我们推荐你把 `template/` 里的内容复制到一个新建的文件夹 `works/` 中进行编辑，这样可以更方便地跟踪模板更新。
 
 ## 基本使用流程
 
@@ -55,6 +48,21 @@ typst watch thesis.typ --root ./
 3. 按照示例格式编写各章节内容
 4. 在 `works/refs.bib` 中添加参考文献
 5. 运行编译命令生成 PDF
+
+### 实时预览
+
+推荐使用 VS Code + [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) 插件：
+
+```bash
+typst watch ./works/zju-bachelor-thesis.typ --root ./
+```
+
+也提供了脚本包装：
+**Windows**: `tools\watch.cmd`
+
+随后，在 VS Code 中打开 `works/zju-bachelor-thesis.typ` 文件，按下 `Ctrl+Shift+P`，选择 `Tinymist: Open Preview` 即可实时预览论文效果。
+
+## 关于 Tools
 
 `tools` 目录下包含了一个 Python 脚本 `CalculateChineseCharacters.py`，用于统计论文中中文字符的数量。你可以通过以下命令运行该脚本：
 
@@ -132,15 +140,15 @@ universal-zju-thesis/
 
 ### 字号对照
 
-| 论文部分   | 字号   | 字体              | pt 值  | 格式       |
-| ---------- | ------ | ----------------- | ------ | ---------- |
-| 章标题     | 三号   | 仿宋加黑          | 16pt   | 左对齐     |
-| 节标题     | 小三号 | 仿宋加黑          | 15pt   | 左对齐     |
-| 条标题     | 四号   | 仿宋加黑          | 14pt   | 左对齐     |
-| 正文       | 小四号 | 仿宋              | 12pt   | 1.5 倍行距 |
-| 图/表标题  | 五号   | 宋体加黑          | 10.5pt | 居中       |
-| 表格内容   | 五号   | 宋体              | 10.5pt | 单倍行距   |
-| 页眉       | 小五号 | 宋体              | 9pt    |            |
+| 论文部分  | 字号   | 字体     | pt 值  | 格式       |
+| --------- | ------ | -------- | ------ | ---------- |
+| 章标题    | 三号   | 仿宋加黑 | 16pt   | 左对齐     |
+| 节标题    | 小三号 | 仿宋加黑 | 15pt   | 左对齐     |
+| 条标题    | 四号   | 仿宋加黑 | 14pt   | 左对齐     |
+| 正文      | 小四号 | 仿宋     | 12pt   | 1.5 倍行距 |
+| 图/表标题 | 五号   | 宋体加黑 | 10.5pt | 居中       |
+| 表格内容  | 五号   | 宋体     | 10.5pt | 单倍行距   |
+| 页眉      | 小五号 | 宋体     | 9pt    |            |
 
 ### 三线表
 
