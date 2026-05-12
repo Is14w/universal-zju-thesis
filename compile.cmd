@@ -1,0 +1,1 @@
+typst compile ./works/zju-bachelor-thesis.typ --root ./

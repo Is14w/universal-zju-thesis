@@ -1,0 +1,1 @@
+typst watch ./works/zju-bachelor-thesis.typ --root ./

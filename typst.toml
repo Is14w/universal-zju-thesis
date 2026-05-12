@@ -1,0 +1,11 @@
+[package]
+name = "universal-zju-thesis"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Is14w <phalaenopsis.aic@qq.com>"]
+license = "MIT"
+description = "浙江大学毕业设计论文模板 | Universal Zhejiang University Thesis"
+repository = "https://github.com/Is14w/universal-zju-thesis"
+keywords = ["Zhejiang University", "thesis", "template"]
+categories = ["thesis"]
+compiler = "0.14.0"
